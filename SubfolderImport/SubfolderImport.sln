@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36930.0 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubfolderImport", "SubfolderImport\SubfolderImport.csproj", "{F94AF584-0DED-4F69-BA90-5E2888021733}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubfolderImport", "SubfolderImport.csproj", "{F94AF584-0DED-4F69-BA90-5E2888021733}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2055D949-209D-41CC-9E3E-E2A3EBEE2301}
+		SolutionGuid = {AC0C3D17-0FDC-42FE-9E71-48E55E45D50F}
 	EndGlobalSection
 EndGlobal
