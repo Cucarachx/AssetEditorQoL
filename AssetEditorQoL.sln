@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36930.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubfolderImport", "..\SubfolderImport\SubfolderImport\SubfolderImport.csproj", "{F94AF584-0DED-4F69-BA90-5E2888021733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReloadMesh", "ReloadMesh\ReloadMesh.csproj", "{0A7B61D0-DF97-4D1C-9C82-A746C1EF3729}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F94AF584-0DED-4F69-BA90-5E2888021733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F94AF584-0DED-4F69-BA90-5E2888021733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F94AF584-0DED-4F69-BA90-5E2888021733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F94AF584-0DED-4F69-BA90-5E2888021733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A7B61D0-DF97-4D1C-9C82-A746C1EF3729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A7B61D0-DF97-4D1C-9C82-A746C1EF3729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A7B61D0-DF97-4D1C-9C82-A746C1EF3729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A7B61D0-DF97-4D1C-9C82-A746C1EF3729}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F64E3D9-7B17-4765-8C5C-D5D65789988F}
+	EndGlobalSection
+EndGlobal
