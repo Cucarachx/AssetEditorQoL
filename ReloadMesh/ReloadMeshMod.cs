@@ -141,8 +141,26 @@ namespace ReloadMesh
                 yield return null;
             }
 
+            // Esperar a que las texturas terminen de cargar
+            while (ReloadState.LastImportAsset.IsLoadingTextures)
+            {
+                yield return null;
+            }
+            Debug.Log("ReloadMesh: Textures loaded, calling FinalizeImport");
             // Finalizar el import — comprime texturas y genera thumbnails
             ReloadState.LastImportAsset.FinalizeImport();
+            
+            // Esperar tasks de compresión frame por frame
+            Renderer renderer = ReloadState.LastImportAsset.Object?.GetComponent<Renderer>();
+            if (renderer != null && renderer.material != null)
+            {
+                Material mat = renderer.material;
+                foreach (string texName in new[] { "_MainTex", "_XYSMap", "_ACIMap" })
+                {
+                    Texture2D tex = mat.GetTexture(texName) as Texture2D;
+                    Debug.Log($"ReloadMesh: {texName} = {(tex != null ? tex.format.ToString() : "NULL")}");
+                }
+            }
 
             // Actualizar el prefab en el editor
             ToolsModifierControl.toolController.m_editPrefabInfo =

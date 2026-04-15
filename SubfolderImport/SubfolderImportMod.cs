@@ -132,7 +132,7 @@ public class LoadTexturesPatch
     {
         try
         {
-            Debug.Log("SubfolderImport BEFORE - path: " + path + " modelName: " + modelName);
+            //Debug.Log("SubfolderImport BEFORE - path: " + path + " modelName: " + modelName);
             // Construir la ruta completa del modelo
             string fullPath = Path.Combine(path, modelName);
 
@@ -140,7 +140,7 @@ public class LoadTexturesPatch
             path = Path.GetDirectoryName(fullPath);
             modelName = Path.GetFileName(fullPath);
 
-            Debug.Log("SubfolderImport AFTER - path: " + path + " modelName: " + modelName);        
+            //Debug.Log("SubfolderImport AFTER - path: " + path + " modelName: " + modelName);        
         }
         catch (Exception ex)
         {
